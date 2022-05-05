@@ -19,9 +19,9 @@ app.use(express.urlencoded({ extended: false }))
 app.get('/country', countryController.getCountryDetails)
 app.get('/airline', airlineController.getAirlineDetails)
 app.get('/city', cityController.getCityDetails)
-app.post('city/create/:id', cityController.createCityDetails)
-app.put('city/update/:id', cityController.updateCity)
-app.delete('city/delete/:id', cityController.deleteCity)
+app.post('/create/city', cityController.createCityDetails)
+app.put('/update/city/:id', cityController.updateCity)
+app.delete('/delete/city/:id', cityController.deleteCity)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
