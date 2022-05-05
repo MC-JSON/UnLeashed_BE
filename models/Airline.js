@@ -6,9 +6,7 @@ const Airline = new Schema(
     name: { type: String },
     logo: { type: String },
     url: { type: String },
-    reservations: { type: String },
-    inflight: { type: String },
-    guidelines: { type: String }
+    reservations: { type: String }
   },
   { timestamps: true }
 )
