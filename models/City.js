@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const City = new Schema(
   {
-    description: { type: String },
+    name: { type: String },
     stay: { type: String },
     treat: { type: String },
     walkabout: { type: String }

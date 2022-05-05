@@ -12,7 +12,7 @@ const main = async () => {
     }
   ]
 
-  await Airline.insertMany(Airline)
+  await Airline.insertMany(airline)
   console.log('Unleash the fury Mitch!')
 }
 
