@@ -16,7 +16,7 @@
 
 Welcome to UnLeashed!
 
-Here you will find resources for travelling with your dog across the world. Whether you need information on requirements for bringing your dog into a new country or you want to see the best parks for your dog to in a specific city, UnLeashed will lead you there.
+Here you will find resources for traveling with your dog across the world. Whether you need information on requirements for bringing your dog into a new country or how to fly with them on your most traveled airline, UnLeashed will lead you there. You will also find UnLeashed's lead dog Ruthie recommending her favorite areas in cities she has traveled to.
 
 The details are hosted on a scaled-back, user-friendly, full-stack MERN application.
 
@@ -46,8 +46,8 @@ The details are hosted on a scaled-back, user-friendly, full-stack MERN applicat
 
 ## **MVP**
 
-- [] Get 
-- [] Post 
+- [] Get
+- [] Post
 - [] Update
 - [] Delete
 - [] 3 Models
