@@ -4,6 +4,7 @@ const Schema = mongoose.Schema
 const City = new Schema(
   {
     name: { type: String },
+    image: { type: String },
     date: { type: String },
     description: { type: String },
     stay: { type: String },
