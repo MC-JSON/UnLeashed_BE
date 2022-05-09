@@ -8,8 +8,11 @@ const City = new Schema(
     date: { type: String },
     description: { type: String },
     stay: { type: String },
+    stayLink: { type: String },
     treat: { type: String },
-    walk: { type: String }
+    treatLink: { type: String },
+    walk: { type: String },
+    walkLink: { type: String }
   },
   { timestamps: true }
 )
