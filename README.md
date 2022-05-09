@@ -62,3 +62,5 @@ The details are hosted on a scaled-back, user-friendly, full-stack MERN applicat
 ---
 
 ### **Credits**
+
+https://www.freelogodesign.org/
