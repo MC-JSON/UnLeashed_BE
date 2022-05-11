@@ -2,77 +2,78 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const User = require('../models/user')
 
-const signup = (req, res) => {
-  const user = new User({
-    name: req.body.fullName,
-    email: req.body.email,
-    password: bcrypt.hashSync(req.body.password, 8)
-  })
+const SALT_ROUNDS = process.env.SALT_ROUNDS || 11
+const TOKEN_KEY = process.env.TOKEN_KEY || 'areallylonggoodkey'
 
-  user.save((err, user) => {
-    if (err) {
-      res.status(500).send({
-        message: err
-      })
-      return
-    } else {
-      res.status(200).send({
-        message: 'User Registered successfully'
-      })
+//for JWT expiry
+const today = new Date()
+const exp = new Date(today)
+exp.setDate(today.getDate() + 30)
+
+const signup = async (req, res) => {
+  try {
+    const { name, email, password } = req.body
+    const password_digest = await bcrypt.hash(password, SALT_ROUNDS)
+    const user = new User({
+      name,
+      email,
+      password_digest
+    })
+
+    await user.save()
+
+    const payload = {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      exp: parseInt(exp.getTime() / 1000)
     }
-  })
+
+    const token = jwt.sign(payload, TOKEN_KEY)
+    res.status(201).json({ token })
+  } catch (error) {
+    res.status(400).json({ error: error.message })
+  }
 }
 
-const signin = (req, res) => {
-  User.findOne({
-    email: req.body.email
-  }).exec((err, user) => {
-    if (err) {
-      res.status(500).send({
-        message: err
-      })
-      return
-    }
-    if (!user) {
-      return res.status(404).send({
-        message: 'User Not found.'
-      })
-    }
-
-    //comparing passwords
-    let passwordIsValid = bcrypt.compareSync(req.body.password, user.password)
-    // checking if password was valid and send response accordingly
-    if (!passwordIsValid) {
-      return res.status(401).send({
-        accessToken: null,
-        message: 'Invalid Password!'
-      })
-    }
-    //signing token with user id
-    let token = jwt.sign(
-      {
-        id: user.id
-      },
-      process.env.API_SECRET,
-      {
-        expiresIn: 86400
-      }
+const signin = async (req, res) => {
+  try {
+    const { email, password } = req.body
+    const user = await User.findOne({ email: email }).select(
+      'name email password_digest'
     )
-
-    //responding to client request with user profile success message and  access token .
-    res.status(200).send({
-      user: {
+    if (await bcrypt.compare(password, user.password_digest)) {
+      const payload = {
         id: user._id,
+        name: user.name,
         email: user.email,
-        name: user.name
-      },
-      message: 'Login successful',
-      accessToken: token
-    })
-  })
+        exp: parseInt(exp.getTime() / 1000)
+      }
+
+      const token = jwt.sign(payload, TOKEN_KEY)
+      res.status(201).json({ token })
+    } else {
+      res.status(401).send('Invalid Credentials')
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
+
+const verify = async (req, res) => {
+  try {
+    const token = req.headers.authorization.split(' ')[1]
+    const payload = jwt.verify(token, TOKEN_KEY)
+    if (payload) {
+      res.json(payload)
+    }
+  } catch (error) {
+    res.status(401).send('Not Authorized')
+  }
 }
 
 module.exports = {
   signup,
-  signin
+  signin,
+  verify
 }

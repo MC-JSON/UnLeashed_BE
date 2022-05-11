@@ -5,7 +5,7 @@ const User = new Schema(
   {
     name: { type: String },
     email: { type: String },
-    password: { type: String }
+    password_digest: { type: String }
   },
   { timestamps: true }
 )
