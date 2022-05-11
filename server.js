@@ -7,8 +7,10 @@ const countryController = require('./controller/CountryController')
 const cityController = require('./controller/CityController')
 const airlineController = require('./controller/AirlineController')
 const authController = require('./controller/authController')
+const verifyToken = require('./utilities/auth')
 
 const app = express()
+require('dotenv').config()
 
 const PORT = process.env.PORT || 3001
 
@@ -27,6 +29,22 @@ app.get('/city', cityController.getCityDetails)
 app.post('/create/city', cityController.createCityDetails)
 app.put('/update/city/:id', cityController.updateCity)
 app.delete('/delete/city/:id', cityController.deleteCity)
+app.get('/hiddencontent', verifyToken, function (req, res) {
+  if (!user) {
+    res.status(403).send({
+      message: 'Invalid JWT token'
+    })
+  }
+  if (req.user == 'admin') {
+    res.status(200).send({
+      message: 'Congratulations! but there is no hidden content'
+    })
+  } else {
+    res.status(403).send({
+      message: 'Unauthorized access'
+    })
+  }
+})
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
