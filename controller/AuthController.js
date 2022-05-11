@@ -1,7 +1,7 @@
 const User = require('../models/User')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
-const { createJWT } = require('../utils/auth')
+const { createJWT } = require('../utilities/auth')
 
 const emailRegexp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
@@ -82,7 +82,7 @@ const signin = (req, res) => {
     errors.push({ email: 'invalid email' })
   }
   if (!password) {
-    errors.push({ passowrd: 'required' })
+    errors.push({ password: 'required' })
   }
   if (errors.length > 0) {
     return res.status(422).json({ errors: errors })
