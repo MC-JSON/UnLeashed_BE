@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const db = require('./db')
 const logger = require('morgan')
+const bodyParser = require('body-parser')
 const countryController = require('./controller/CountryController')
 const cityController = require('./controller/CityController')
 const airlineController = require('./controller/AirlineController')
@@ -10,6 +11,7 @@ const app = express()
 
 const PORT = process.env.PORT || 3001
 
+app.use(bodyParser.json())
 app.use(express.json())
 app.use(cors())
 app.use(logger('dev'))
