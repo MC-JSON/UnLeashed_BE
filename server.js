@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const countryController = require('./controller/CountryController')
 const cityController = require('./controller/CityController')
 const airlineController = require('./controller/AirlineController')
+const authController = require('./controller/authController')
 
 const app = express()
 
@@ -18,6 +19,8 @@ app.use(logger('dev'))
 app.use(express.urlencoded({ extended: false }))
 
 //routes
+app.post('/signup', authController.signup)
+app.post('/signin', authController.signin)
 app.get('/country', countryController.getCountryDetails)
 app.get('/airline', airlineController.getAirlineDetails)
 app.get('/city', cityController.getCityDetails)
