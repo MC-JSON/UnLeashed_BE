@@ -4,32 +4,20 @@ const City = require('../models/City.js')
 const main = async () => {
   const city = [
     {
-      name: 'Bruges',
+      name: 'Minneapolis',
       image:
-        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vtpjJs5h9ntB81l7L80XhgHaEK%26pid%3DApi&f=1',
-      date: '05/01/2022',
-      description: 'Beautiful stay in Bruges. Check out our recommendations!',
-      stay: 'AirBnb',
+        'https://res.cloudinary.com/dntpwckqi/image/upload/v1652391089/Ruth_cm8cjx.jpg',
+      date: '05/12/2022',
+      description:
+        'We had a comfortable long-weekend stay at my Khaleh Sahars! My favorite treats were from Pennys Coffee. I really had a time meeting the other dogs around the place. There were so many great walks in this dog friendly town, but my favorite trot this trip was at Lake of the Isles Dog Park. UnLeashed freedom! I look forward to coming back soon.',
+      stay: 'AirBnb Pet-Friendly Stay',
       stayLink:
-        'https://www.airbnb.com/s/Bruges--Belgium/homes?adults=2&pets=1&irgwc=1&irclid=0L03KmQeqxyITxMWwZzwmRiZUkGSMP2P8zLHUg0&ircid=4273&sharedid=dog-friendly-airbnbs-in-bruges-be&af=48966681&iratid=9627&c=.pi73.pk4273_15874&irparam1=',
-      treat: 'Cafe Vlissinghe',
-      treatLink: 'http://www.cafevlissinghe.be/',
-      walk: 'Bruges Art Route',
-      walkLink: 'https://cityseeker.com/bruges/1136240-bruges-art-route'
-    },
-    {
-      name: 'Brussels',
-      image:
-        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vtpjJs5h9ntB81l7L80XhgHaEK%26pid%3DApi&f=1',
-      date: '05/01/2022',
-      description: 'Beautiful stay in Brussels. Check out our recommendations!',
-      stay: 'AirBnb',
-      stayLink:
-        'https://www.airbnb.com/s/Bruges--Belgium/homes?adults=2&pets=1&irgwc=1&irclid=0L03KmQeqxyITxMWwZzwmRiZUkGSMP2P8zLHUg0&ircid=4273&sharedid=dog-friendly-airbnbs-in-bruges-be&af=48966681&iratid=9627&c=.pi73.pk4273_15874&irparam1=',
-      treat: 'Cafe Vlissinghe',
-      treatLink: 'http://www.cafevlissinghe.be/',
-      walk: 'Bruges Art Route',
-      walkLink: 'https://cityseeker.com/bruges/1136240-bruges-art-route'
+        'https://www.airbnb.com/rooms/21578309?adults=2&check_in=2022-07-08&check_out=2022-07-14&federated_search_id=c7a3062e-d70b-4777-9392-d0151d12abc9&source_impression_id=p3_1652391272_Qrw%2FJSp%2Fln1TnIKS',
+      treat: 'Pennys Coffee',
+      treatLink: 'http://www.pennyscoffee.com/',
+      walk: 'Lake of the Isles Dog Park',
+      walkLink:
+        'https://www.minneapolisparks.org/parks__destinations/dog_parks/lake_of_the_isles_off-leash_dog_park/'
     }
   ]
 
