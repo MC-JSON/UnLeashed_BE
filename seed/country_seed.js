@@ -196,7 +196,7 @@ const main = async () => {
       name: 'Ecuador',
       flag_img: 'https://media.bringfido.com/country_flags/Ecuador.jpg',
       requirements:
-        'Your dog will need health certificate from your veterinarian 48 hours prior to departure, and vaccinated prior to departure. You will also need to contact Agrocalidad at port of entry with 72 hour advance arrival time.,
+        'Your dog will need health certificate from your veterinarian 48 hours prior to departure, and vaccinated prior to departure. You will also need to contact Agrocalidad at port of entry with 72 hour advance arrival time.',
       url: 'https://www.agrocalidad.gob.ec/'
     },
     {
