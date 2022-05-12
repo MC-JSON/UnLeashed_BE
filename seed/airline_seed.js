@@ -15,7 +15,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/arelingus.jpg',
       url: 'https://www.aerlingus.com/travel-information/baggage-information/travelling-with-pets/#/tab-0-flights-within-europe',
       reservations:
-        'Passengers who plan on traveling with pets should contact Aer Lingus before making a reservation. You can call the Aer Lingus Customer Service Team directly at (888) 578-4806 to make arrangements.'
+        'Passengers who plan on traveling with their dog should contact Aer Lingus before making a reservation. You can call the Aer Lingus Customer Service Team directly at (888) 578-4806 to make arrangements.'
     },
     {
       name: 'AeroMexico',
@@ -36,14 +36,14 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/airindia.jpg',
       url: 'https://www.airindia.in/new-pets.htm',
       reservations:
-        'There is a maximum of 2 pets allowed on each flight, so you should contact the Customer Service Team at (800) 223-7776 to guarantee a spot on board. Passengers traveling with their pet will be seated towards the back of the aircraft.'
+        'There is a maximum of 2 pets allowed on each flight, so you should contact the Customer Service Team at (800) 223-7776 to guarantee a spot on board. Passengers traveling with their dog will be seated towards the back of the aircraft.'
     },
     {
       name: 'Air France',
       logo: 'https://media.bringfido.com/travel/airline_logos/air_france.jpg',
       url: 'https://wwws.airfrance.us/information/passagers/voyager-avec-son-animal-chien-chat',
       reservations:
-        'When you are booking your ticket with Air France, be sure to let them know that you are traveling with a pet. Depending on the aircraft, the number of animals allowed to travel may vary. You can contact their Telephone Sales Team at 800-237-2747 with any additional questions or concerns.'
+        'When you are booking your ticket with Air France, be sure to let them know that you are traveling with a dog. Depending on the aircraft, the number of animals allowed to travel may vary. You can contact their Telephone Sales Team at 800-237-2747 with any additional questions or concerns.'
     },
     {
       name: 'Alaska',
@@ -64,21 +64,21 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/allegiant.jpg',
       url: 'https://www.allegiantair.com/traveling-with-pets',
       reservations:
-        'Before being accepted on board, all pet carriers must be inspected at the airport to ensure that the pet and carrier are in compliance with the guidelines. You can book a spot online when purchasing your own spot on board. If you have any questions on availability, you can contact the Customer Service Team at (702) 505-8888.'
+        'Before being accepted on board, all dog carriers must be inspected at the airport to ensure that the dog and carrier are in compliance with the guidelines. If you have any questions on availability, you can contact the Customer Service Team at (702) 505-8888.'
     },
     {
       name: 'American Airlines',
       logo: 'https://media.bringfido.com/travel/airline_logos/american-airlines.jpg',
       url: 'https://www.aa.com/i18n/travel-info/special-assistance/pets.jsp',
       reservations:
-        'American Airlines allows 7 kennels on American Airlines flights and 5 kennels on American Eagle flights. If you plan on traveling with your pet, you should contact the Customer Service Team at (800) 433-7300 as soon as you confirm your travel plans to guarantee a spot. American Airlines can restrict pets flying if the weather conditions are above 85 degrees Fahrenheit and below 45 degrees Fahrenheit.'
+        'American Airlines allows 7 kennels on American Airlines flights and 5 kennels on American Eagle flights. If you plan on traveling with your dog, you should contact the Customer Service Team at (800) 433-7300 as soon as you confirm your travel plans to guarantee a spot. American Airlines can restrict dogs flying if the weather conditions are above 85 degrees Fahrenheit and below 45 degrees Fahrenheit.'
     },
     {
       name: 'Avianca',
       logo: 'https://www.bringfido.com/travel/airline_policies/avianca/',
       url: 'https://www.avianca.com/co/en/before-your-trip/special-needs/pets-on-board/',
       reservations:
-        'Avianca welcomes a variety of pets in both the cabin and the hold on many of their flights. Please call (800)284-2622 for reservations or more information.'
+        'Avianca welcomes dogs in both the cabin and the hold on many of their flights. Please call (800)284-2622 for reservations or more information.'
     },
     {
       name: 'British Airways',
@@ -99,7 +99,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/brussels-airlines.jpg',
       url: 'https://www.brusselsairlines.com/bf/en/special-care/pets',
       reservations:
-        'Pets need to be approved for travel at reservation by Brussels Airlines. You can find out more details by contacting the Customer Service Center at 866-308-2230.'
+        'Dogs need to be approved for travel at reservation by Brussels Airlines. You can find out more details by contacting the Customer Service Center at 866-308-2230.'
     },
     {
       name: 'Caribbean Airlines',
@@ -113,14 +113,14 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/cathaypacific.jpg',
       url: 'https://www.cathaypacific.com/cx/en_US/prepare-trip/help-for-passengers/travelling-with-animals/overview.html',
       reservations:
-        'When you are making your reservation, make sure you have the total combined weight of the pet and carrier, dimensions, material, and make. Like with most airlines, you will also be required to provide valid health and vaccination certificates, entry permits, and any other documents required by the country you are flying to. You can contact them at (800) 233-2742 to make your reservation or to ask any further questions.'
+        'When you are making your reservation, make sure you have the total combined weight of your dog and carrier, dimensions, material, and make. Like with most airlines, you will also be required to provide valid health and vaccination certificates, entry permits, and any other documents required by the country you are flying to. You can contact them at (800) 233-2742 to make your reservation or to ask any further questions.'
     },
     {
       name: 'Cebu Pacific',
       logo: 'https://media.bringfido.com/travel/airline_logos/cebu-pacific.jpg',
       url: 'https://www.cebupacificair.com/',
       reservations:
-        'CEB allows pets to travel in the hold on a number of different flights. Before being accepted on board, you will need to source valid health certificates, rabies vaccination reports, a quarantine report, and attach all forms to your pets IATA-approved carrier. You can find out more information by contacting the cargo team via telephone at (+632) 802-7150.'
+        'CEB allows dogs to travel in the hold on a number of different flights. Before being accepted on board, you will need to source valid health certificates, rabies vaccination reports, a quarantine report, and attach all forms to your pets IATA-approved carrier. You can find out more information by contacting them via telephone at (+632) 802-7150.'
     },
     {
       name: 'China Airlines',
@@ -134,21 +134,21 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/copaairlines.jpg',
       url: 'https://www.copaair.com/en/web/us/pets',
       reservations:
-        'They welcome small pets into the cabin on select flights. Please call (800)359-2672 for more information.'
+        'They welcome small dogs into the cabin on select flights. Please call (800)359-2672 for more information.'
     },
     {
       name: 'Delta',
       logo: 'https://media.bringfido.com/travel/airline_logos/delta.jpg',
       url: 'https://www.delta.com/us/en/pet-travel/overview',
       reservations:
-        'Pets are accepted on a first-come, first-serve basis. Delta limits the number of total pets per flight, allowing 2 pets to travel in first class, 2 in business class, and 4 in the main cabin of most of their flights. You can call Delta at 800-221-1212 to guarantee a spot on board.'
+        'Dogs are accepted on a first-come, first-serve basis. Delta limits the number of total pets per flight, allowing 2 pets to travel in first class, 2 in business class, and 4 in the main cabin of most of their flights. You can call Delta at 800-221-1212 to guarantee a spot on board.'
     },
     {
       name: 'EgyptAir',
       logo: 'https://media.bringfido.com/travel/airline_logos/egyptair.jpg',
       url: 'https://www.egyptair.com/en/fly/special-services/Pages/traveling-with-pets.aspx',
       reservations:
-        'Only 2 animals are accepted in each class in the cabin with EgyptAir, so passengers planning on traveling with a pet should contact the Reservations Department well in advance of their departure date. You can contact them via telephone at (+1) 212-581-5600.'
+        'Only 2 animals are accepted in each class in the cabin with EgyptAir, so passengers planning on traveling with a dog should contact the Reservations Department well in advance of their departure date. You can contact them via telephone at (+1) 212-581-5600.'
     },
     {
       name: 'Emirates',
@@ -162,7 +162,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/ethiopian.jpg',
       url: 'https://www.ethiopianairlines.com/aa/information',
       reservations:
-        'Ethiopian Airlines requires pet owners to register their pet in advance of their departure time. As only 2 pets are permitted in Economy class and 1 in Business, owners should request a spot for their pet as soon as their travel plans are confirmed. You can do this by contacting them directly at (800) 445-2733.'
+        'Ethiopian Airlines requires dog owners to register their dog in advance of their departure time. As only 2 pets are permitted in Economy class and 1 in Business, owners should request a spot for their pet as soon as their travel plans are confirmed. You can do this by contacting them directly at (800) 445-2733.'
     },
     {
       name: 'Flair Air',
@@ -183,7 +183,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/Hawaiian-airlines.jpg',
       url: 'https://www.hawaiianairlines.com/our-services/special-assistance/traveling-with-animals',
       reservations:
-        'Hawaiian Airlines limits the number of animals on each flight. They recommend that you reserve a ticket for yourself and your pet as soon as possible after confirming your travel plans. You can call them directly at 1-800-367-5320 and advise the agent that you are traveling with your pet.'
+        'Hawaiian Airlines limits the number of animals on each flight. They recommend that you reserve a ticket for yourself and your dog as soon as possible after confirming your travel plans. You can call them directly at 1-800-367-5320 and advise the agent that you are traveling with your pet.'
     },
     {
       name: 'Hong Kong Airlines',
@@ -218,49 +218,49 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/japan-airlines.jpg',
       url: 'https://www.jal.co.jp/jp/en/inter/support/pet/',
       reservations:
-        'Animals are permitted to travel on domestic and international flights as cargo if they meet the necessary requirements. You can contact the Cargo Department directly at (800) 525-3663.'
+        'Dogs are permitted to travel on domestic and international flights as cargo if they meet the necessary requirements. You can contact the Cargo Department directly at (800) 525-3663.'
     },
     {
       name: 'JetBlue',
       logo: 'https://media.bringfido.com/travel/airline_logos/jetblue.jpg',
       url: 'https://www.jetblue.com/traveling-together/traveling-with-pets',
       reservations:
-        'JetBlue only allows 4 pets on each flight, so its important to book your pets ticket as early as possible. You can call the Customer Service Team at 1-800-JETBLUE and let the reservations agent know that you would like to travel with your pet.'
+        'JetBlue only allows 4 pets on each flight, so its important to book your dogs ticket as early as possible. You can call the Customer Service Team at 1-800-JETBLUE and let the reservations agent know that you would like to travel with your dog.'
     },
     {
       name: 'KLM',
       logo: 'https://media.bringfido.com/travel/airline_logos/klm.jpg',
       url: 'https://www.klm.com/travel/us_en/prepare_for_travel/travel_planning/pets/index.htm',
       reservations:
-        'All pet bookings need to made by telephone. As there are a limited number of spots for pets on most flights, they advise you to make the reservation at the latest within 24 hours after you have booked your ticket, but at least 48 hours before departure. You can contact the KLM Customer Service Team at 866-434-0320 as soon as you have finalized your travel plans.'
+        'All dog bookings need to made by telephone. As there are a limited number of spots for pets on most flights, they advise you to make the reservation at the latest within 24 hours after you have booked your ticket, but at least 48 hours before departure. You can contact the KLM Customer Service Team at 866-434-0320 as soon as you have finalized your travel plans.'
     },
     {
       name: 'Korean Air',
       logo: 'https://media.bringfido.com/travel/airline_logos/koreanair.jpg',
       url: 'https://www.koreanair.com/us/en',
       reservations:
-        'Korean Air only allows a certain number of pets on each flight, so they suggest you book Fido a spot on board as soon as you confirm your travel plans. You can contact the Customer Service Team at (800) 438-5000 to do this.'
+        'Korean Air only allows a certain number of pets on each flight, so they suggest you book a spot on board as soon as you confirm your travel plans. You can contact the Customer Service Team at (800) 438-5000 to do this.'
     },
     {
       name: 'LATAM',
       logo: 'https://media.bringfido.com/travel/airline_logos/latam-formally-LAN.jpg',
       url: 'https://www.latamairlines.com/us/en/experience/prepare-your-trip/pets-transportation',
       reservations:
-        'Pet owners should request pet travel service at least 48 hours prior to their flight. As this service is subject to availability, you should request it as soon as you make your reservation by calling the Customer Service Team at 866-435-9526.'
+        'Dog owners should request pet travel service at least 48 hours prior to their flight. As this service is subject to availability, you should request it as soon as you make your reservation by calling the Customer Service Team at 866-435-9526.'
     },
     {
       name: 'LOT Polish Airlines',
       logo: 'https://media.bringfido.com/travel/airline_logos/LOT.jpg',
       url: 'https://lot.com/us/en/journey/special-services/traveling-with-pets',
       reservations:
-        'LOT only take a limited number of pets in the cabin, so make reservations for your pet as soon as possible by calling their Contact Center at (+48) 22-577-77-55.'
+        'LOT only take a limited number of pets in the cabin, so make reservations for your dog as soon as possible by calling their Contact Center at (+48) 22-577-77-55.'
     },
     {
       name: 'Lufthansa',
       logo: 'https://media.bringfido.com/travel/airline_logos/lufthansa_eJl1RYU.jpg',
       url: 'https://www.lufthansa.com/am/en/animals-as-additional-carry-on-baggage',
       reservations:
-        'Each passenger may only bring 2 pets on board. As soon as your travel plans are confirmed, you should call the Lufthansa Reservations Team at (800) 645-3880 and tell the agent that you are traveling with your pet.'
+        'Each passenger may only bring 2 pets on board. As soon as your travel plans are confirmed, you should call the Lufthansa Reservations Team at (800) 645-3880 and tell the agent that you are traveling with your dog.'
     },
     {
       name: 'Malaysia Airlines',
@@ -274,7 +274,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/pakistan-internation.jpg',
       url: 'https://www.piac.com.pk/',
       reservations:
-        'Animals must be pre-approved for travel with PIA. You can find out all the information you need by contacting them directly via telephone at (844) 682-5260.'
+        'Dogs must be pre-approved for travel with PIA. You can find out all the information you need by contacting them directly via telephone at (844) 682-5260.'
     },
     {
       name: 'Philippine Airlines',
@@ -316,14 +316,14 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/south-african-airways.jpg',
       url: 'https://www.flysaa.com/manage-fly/baggage/checked-baggage/animals',
       reservations:
-        'Passengers who want to travel with their pets should make the necessary arrangements through the call center via telephone at (+27) 11-978-1111 or 0861-359-722.'
+        'Passengers who want to travel with their dog should make the necessary arrangements through the call center via telephone at (+27) 11-978-1111 or 0861-359-722.'
     },
     {
       name: 'Southwest',
       logo: 'https://media.bringfido.com/travel/airline_logos/southwest.jpg',
       url: 'https://www.southwest.com/pets/',
       reservations:
-        'Southwest Airlines accepts pets on a first-come, first-served basis until they reach their capacity. The total number of pet carriers on each flight is limited to 6, so passengers should make their pet reservations as soon as they confirm travel plans. You can call the Customer Service Team at 1-800-435-9792 to reserve a spot.'
+        'Southwest Airlines accepts pets on a first-come, first-served basis until they reach their capacity. The total number of pet carriers on each flight is limited to 6, so passengers should make their dog reservations as soon as they confirm travel plans. You can call the Customer Service Team at 1-800-435-9792 to reserve a spot.'
     },
     {
       name: 'Spirit',
@@ -365,21 +365,21 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/TAP.jpg',
       url: 'https://www.flytap.com/en-us/travelling-with-animals/pets',
       reservations:
-        'To find out more information about traveling with pets and to make a reservation, you can call the Customer Service Team at 800-221-7370.'
+        'To find out more information about traveling with your dog and to make a reservation, you can call the Customer Service Team at 800-221-7370.'
     },
     {
       name: 'Thai Airways',
       logo: 'https://media.bringfido.com/travel/airline_logos/thai.jpg',
       url: 'https://www.thaiairways.com/en/plan/travel_information/pet_travel.page',
       reservations:
-        'To find out more information about traveling with pets and to make a reservation, you can call the Customer Service Team at 800-767-3598.'
+        'To find out more information about traveling with your dog and to make a reservation, you can call the Customer Service Team at 800-767-3598.'
     },
     {
       name: 'Turkish Airlines',
       logo: 'https://media.bringfido.com/travel/airline_logos/turkish-airlines.jpg',
       url: 'https://www.turkishairlines.com/en-us/any-questions/traveling-with-pets/',
       reservations:
-        'Turkish Airlines require passengers traveling with pets to be approved a minimum of 6 hours prior to departure. Turkish Airlines can accommodate different numbers of pets on their various aircraft. You can call Turkish Airlines Customer Support at 1-800-874-8875 for further details.'
+        'Turkish Airlines require passengers traveling with dogs to be approved a minimum of 6 hours prior to departure. Turkish Airlines can accommodate different numbers of pets on their various aircraft. You can call Turkish Airlines Customer Support at 1-800-874-8875 for further details.'
     },
     {
       name: 'United Airlines',
@@ -393,7 +393,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/virgin-atlantic.jpg',
       url: 'https://help.virginatlantic.com/gb/en/how-to-book-your-pet-onto-a-flight.html',
       reservations:
-        'Virgin Atlantic does not allow pets to travel in the cabin on any of their flights.'
+        'Virgin Atlantic does not allow dogs to travel in the cabin on any of their flights.'
     },
     {
       name: 'Viva Air Colombia',
@@ -407,7 +407,7 @@ const main = async () => {
       logo: 'https://media.bringfido.com/travel/airline_logos/westjet.jpg',
       url: 'https://www.westjet.com/en-ca/pets',
       reservations:
-        'WestJet does not allow pets to be reserved online. To add your pet to your travel plans, contact WestJet Customer Service at 1-888-937-8538 to speak to a representative. All of the WestJet aircraft have different restrictions on how many pets are allowed in the cabin and hold.'
+        'WestJet does not allow dogs to be reserved online. To add your dog to your travel plans, contact WestJet Customer Service at 1-888-937-8538 to speak to a representative. All of the WestJet aircraft have different restrictions on how many pets are allowed in the cabin and hold.'
     }
   ]
 
