@@ -1,5 +1,7 @@
 const db = require('../db')
+const bcrypt = require('bcrypt')
 const City = require('../models/City.js')
+const User = require('../models/User.js')
 
 const main = async () => {
   const city = [
@@ -21,8 +23,19 @@ const main = async () => {
     }
   ]
 
+  const user = [
+    {
+      name: 'Ruthie',
+      email: 'ruthieslife8@gmail.com',
+      password_digest: await bcrypt.hash('!a$ecurePAssw0Rd29!', 11)
+    }
+  ]
+
   await City.insertMany(city)
   console.log('Unleash the fury Mitch!')
+
+  await User.insertMany(user)
+  console.log('Users!')
 }
 
 const run = async () => {
