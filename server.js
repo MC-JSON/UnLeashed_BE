@@ -2,10 +2,15 @@ const express = require('express')
 const cors = require('cors')
 const db = require('./db')
 const logger = require('morgan')
-const countryController = require('./controller/CountryController')
-const cityController = require('./controller/CityController')
-const airlineController = require('./controller/AirlineController')
-const authController = require('./controller/authController')
+const { getCountryDetails } = require('./controller/CountryController')
+const {
+  deleteCity,
+  updateCity,
+  getCityDetails,
+  createCityDetails
+} = require('./controller/CityController')
+const { getAirlineDetails } = require('./controller/AirlineController')
+const { signup, signin, verify } = require('./controller/AuthController')
 
 const app = express()
 require('dotenv').config()
@@ -18,15 +23,15 @@ app.use(logger('dev'))
 app.use(express.urlencoded({ extended: false }))
 
 //routes
-app.post('/signup', authController.signup)
-app.post('/signin', authController.signin)
-app.get('/verify', authController.verify)
-app.get('/country', countryController.getCountryDetails)
-app.get('/airline', airlineController.getAirlineDetails)
-app.get('/city', cityController.getCityDetails)
-app.post('/create/city', cityController.createCityDetails)
-app.put('/update/city/:id', cityController.updateCity)
-app.delete('/delete/city/:id', cityController.deleteCity)
+app.post('/signup', signup)
+app.post('/signin', signin)
+app.get('/verify', verify)
+app.get('/country', getCountryDetails)
+app.get('/airline', getAirlineDetails)
+app.get('/city', getCityDetails)
+app.post('/create/city', createCityDetails)
+app.put('/update/city/:id', updateCity)
+app.delete('/delete/city/:id', deleteCity)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
