@@ -16,6 +16,6 @@
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "cd client && rm -rf build && npm install && npm run build"
+    "start": "node server.js"
   }
 }
