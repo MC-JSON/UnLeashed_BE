@@ -1,5 +1,6 @@
 const Airline = require('../models/Airline.js')
 
+//obtain airlines
 const getAirlineDetails = async (req, res) => {
   try {
     const airline = await Airline.find()

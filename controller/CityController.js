@@ -1,5 +1,6 @@
 const City = require('../models/City.js')
 
+//obtain post details
 const getCityDetails = async (req, res) => {
   try {
     const city = await City.find()
@@ -9,6 +10,7 @@ const getCityDetails = async (req, res) => {
   }
 }
 
+//create post details
 const createCityDetails = async (req, res) => {
   try {
     const city = await new City(req.body)
@@ -18,6 +20,7 @@ const createCityDetails = async (req, res) => {
   }
 }
 
+//update post details
 const updateCity = async (req, res) => {
   try {
     const { id } = req.params
@@ -28,6 +31,7 @@ const updateCity = async (req, res) => {
   }
 }
 
+//delete posts
 const deleteCity = async (req, res) => {
   try {
     const { id } = req.params

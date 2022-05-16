@@ -1,6 +1,6 @@
 const Country = require('../models/Country.js')
-const City = require('../models/City.js')
 
+//obtain country details
 const getCountryDetails = async (req, res) => {
   try {
     const country = await Country.find()
@@ -10,16 +10,6 @@ const getCountryDetails = async (req, res) => {
   }
 }
 
-const getCityByCountry = async (req, res) => {
-  try {
-    const city = await Country.find({ city: req.params.city })
-    res.send(city)
-  } catch (error) {
-    return res.status(500).json({ error: error.message })
-  }
-}
-
 module.exports = {
-  getCountryDetails,
-  getCityByCountry
+  getCountryDetails
 }
