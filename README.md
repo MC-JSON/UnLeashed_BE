@@ -9,6 +9,7 @@
 ---
 
 [Trello](https://trello.com/b/eENjqwAP/unleashed)
+[UnLeashed Front-End](https://github.com/MC-JSON/UnLeashed_FE)
 
 ---
 
